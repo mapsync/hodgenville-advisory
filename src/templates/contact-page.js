@@ -46,8 +46,8 @@ export const ContactPageTemplate = ({ content, contentComponent, name, address, 
             Hours, Email and Website
           </div>
           <div className="card-body">
-            {hours}
-            {email}
+            {hours}<br />
+            {email}<br />
             {website}
           </div>
         </div>

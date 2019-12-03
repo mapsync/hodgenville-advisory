@@ -66,5 +66,6 @@ Hodgenville, KY. 42748
 PHONE: (270) 358-3122; Fax: (270) 358-9757  
 Emergency DIAL 911  
 Email:  info@cityofhodgenvilleky.com
+
 ​
 City Council meetings are held the 2nd Monday of each month at 6:00 p.m. at City Hall
