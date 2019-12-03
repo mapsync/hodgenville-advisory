@@ -112,7 +112,7 @@ export const contactPageQuery = graphql`
       frontmatter {
         name,
         address,
-        mail_address,
+        mailing_address,
         city_state_zip,
         phone,
         after_hours,
