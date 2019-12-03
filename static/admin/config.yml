@@ -1,0 +1,58 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: static/img
+public_folder: /img
+display_url: https://cityofhodgenvilleky.geosync.cloud
+logo_url: https://cityofhodgenvilleky.geosync.cloud/img/logo.png
+
+collections:
+  - name: "blog"
+    label: "Advisory"
+    folder: "src/pages/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Draft", name: "draft", widget: "boolean", required: false}
+      - {label: "Description", name: "description", widget: "text", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+  - name: "notification"
+    label: "Notification"
+    folder: "src/pages/notification"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Delivery (Up to 7 days from now)", name: "delivery", widget: "datetime", format: "LLL"}
+      - {label: "High Priority", name: "priority", widget: "boolean", default: false}
+      - {label: "Sound", name: "sound", widget: "boolean", default: false}
+      - {label: "Message", name: "message", widget: "text"}
+      - {label: "Link", name: "link", widget: "string"}
+      - {label: "Send", name: "send", widget: "notification"}
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "src/pages/contact/index.md"
+        label: "Contact"
+        name: "contact"
+        editor:
+          preview: false
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
+          - {label: "Name", name: "name", widget: "string", required: false}
+          - {label: "Address", name: "address", widget: "string", required: false}
+          - {label: "Mailing Address", name: "mailing_address", widget: "string", required: false}
+          - {label: "City, State, Zip", name: "city_state_zip", widget: "string", required: false}
+          - {label: "Phone", name: "phone", widget: "string", required: false}
+          - {label: "Fax", name: "fax", widget: "string", required: false}
+          - {label: "After Hours Phone", name: "after_hours", widget: "string", required: false}
+          - {label: "Hours", name: "hours", widget: "string", required: false}
+          - {label: "Email", name: "email", widget: "string", required: false}
+          - {label: "Website", name: "website", widget: "string", required: false}
+          - {label: "Body", name: "body", widget: "markdown"}
