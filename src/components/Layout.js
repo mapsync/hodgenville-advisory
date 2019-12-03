@@ -32,7 +32,7 @@ const TemplateWrapper = ({ children }) => (
           <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png" />
           <link rel="manifest" href="/img/site.webmanifest" />
-          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00000" />
+          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1E5088" />
           <meta name="apple-mobile-web-app-title" content={data.site.siteMetadata.title} />
           <meta name="application-name" content={data.site.siteMetadata.title} />
           <meta name="msapplication-TileColor" content="#ffffff" />
