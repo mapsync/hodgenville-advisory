@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: CREEKFRONT PARK CLOSURE
 date: 2020-03-24T17:30:49.107Z
-draft: true
+draft: false
 description: COVID-19 CLOSURES
 ---
 UNTIL FURTHER NOTICE:
